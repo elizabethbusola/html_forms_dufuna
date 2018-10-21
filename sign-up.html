@@ -1,0 +1,45 @@
+<html>
+<head>
+    <title>Registration form</title>
+    <link type="text/css" href="sign-up.css" rel="stylesheet">
+	
+</head>
+<body>
+        <form method="post" action="">
+        <fieldset>
+        <legend>Fill this form:</legend>
+    
+                <label for="firstname">Firstname:</label>
+                    <input type="text" name="firstname" id="firstname"><br><br>
+                <label for="lastname">Lastname:</label>
+                        <input type="text" name="lastname" id="lastname"><br><br>
+                <label for="email">Email:</label>
+                        <input type="email" name="email" id="email"><br><br>
+                <label for="password">Password:</label>
+                        <input type="password" name="password" id="password"><br><br>
+                <label for="cpassword">Confirm Password:</label>
+                        <input type="password" name="cpassword" id="cpassword"><br><br>
+                <label for="number">Phone Number:</label>
+                        <input type="number" name="number" id="number"><br><br>
+    
+    <div><label for="gender">Gender:</label>
+            <input type="radio" name="gender" id="male"><label for="male">Male</label>
+            <input type="radio" name="gender" id="female"><label for="female">female</label>
+            
+    </div>
+    <label for="country">Country:</label>
+                        <select name="country" id="country">
+                            <option value="" >Select</option>
+                            <option value="nigeria">Nigeria</option>
+                            <option value="ghana">Ghana</option>
+                            <option value="kenya">Kenya</option>
+                            <option value="gabon">Gabon</option>
+                            <option value="zambia">Zambia</option>
+                        </select><br><br>
+                
+                    <input type="submit" name="submit" value="Submit">
+    </fieldset>
+    
+    </form>
+    </body>
+    </html>
