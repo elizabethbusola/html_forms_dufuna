@@ -1,4 +1,5 @@
 <?php
+
 $firstname = $_POST['firstname'];
 $lastname = $_POST['lastname'];
 $email = $_POST['email'];
@@ -14,7 +15,7 @@ header('Location:success.html');
 
 function saveToDatabase($firstname, $lastname, $email,$password,$cpassword, $phone, $gender,$country) {
    $serverName = "localhost";
-   $database = "signup_quiz3";
+   $database = "dufuna_signup_quiz3";
    $username = "root";
    $dpassword = "";
 
