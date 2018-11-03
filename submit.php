@@ -7,6 +7,7 @@ $cpwd = $_POST['cpwd'];
 $number = $_POST['number'];
 $gender = $_POST['gender'];
 $country = $_POST['country'];
+
 saveToDatabase($fname, $lname, $email, $pwd, $cpwd, $number, $gender, $country);
 header('Location:success.html');
 function saveToDatabase($fname, $lname, $email, $pwd, $cpwd, $number, $gender, $country) {
@@ -24,7 +25,7 @@ function saveToDatabase($fname, $lname, $email, $pwd, $cpwd, $number, $gender, $
     }
    
     $sql = "INSERT INTO form (firstname, lastname, email, pwd, confirm_pwd, phonenumber, gender, country)
-        VALUES ('$fname', '$lname' '$email', '$pwd', '$cpwd', '$number', '$gender', '$country')";
+        VALUES ('$fname', '$lname', '$email', '$pwd', '$cpwd', '$number', '$gender', '$country')";
     $result = mysqli_query($conn, $sql);
  
     //Check for errors
